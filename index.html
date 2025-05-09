@@ -3,7 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Creative Edge Studio</title>
+	<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Creative Graphic Design Agency offering branding, design, digital marketing, and web development.">
+<meta name="keywords" content="Graphic Design, Branding, Web Design, UI/UX, Creative Agency">
+<meta name="author" content="Brand Fellas">
+<title>Brand Fellas - Creative Design Studio</title>
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- Font Awesome for icons -->
@@ -13,7 +18,11 @@
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	
 	<link rel="icon" href="Images/Brand_Fellas_favicon.ico" type="image/x-icon">
-<link rel="apple-touch-icon" href="Images/Brand_Fellas_apple-touch-icon.png">
+<link rel="apple-touch-icon" href="Images/Brand_Fellas_apple-touch-icon.png"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script>new WOW().init();</script>
 
 
 	<script type="application/ld+json">
@@ -239,7 +248,7 @@
   font-weight: 700;
   letter-spacing: -1px;
   margin-bottom: 10px;
-  text-shadow: 0 0 25px rgba(255, 255, 255, 0.2);
+  text-shadow: 0 0 25px rgba(255, 255, 255,0.2);
 }
 
 .hero-tagline {
@@ -356,12 +365,6 @@
 
 .testimonial-section {
   background-color: #f8fafc;
-}
-
-.section-title {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #1f2937;
 }
 
 .testimonial-scroll-wrapper {
@@ -503,7 +506,7 @@
   margin-bottom: 3rem;
   color: #222;
   font-weight: 700;
-  text-align: center;
+  text-align: left;
 }
 
 .services-grid {
@@ -575,6 +578,11 @@ html {
 .section-title .text-highlight {
   color: #ff6f61;
 }
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ff6f6f;
+}
 
 .brand-scroll-wrapper {
   display: flex;
@@ -615,6 +623,215 @@ html {
 .brand-logo-wrapper:hover .brand-logo {
   transform: scale(1.2);
 }
+	  
+.btn-blink {
+  background: linear-gradient(135deg, #F7941D, #800080);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 100px;
+margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  border: none;
+  text-decoration: none;
+  animation: blinkEffect 1.2s ease-in-out infinite;
+  box-shadow: 0 0 15px rgba(252, 176, 69, 0.5);
+  transition: transform 0.3s ease;
+  display: inline-block;
+}
+
+.btn-blink:hover {
+  transform: scale(1.1);
+}
+
+@keyframes blinkEffect {
+  0%, 100% {
+    opacity: 1;
+    box-shadow: 0 0 15px rgba(252, 176, 69, 0.5);
+  }
+  50% {
+    opacity: 0.6;
+    box-shadow: 0 0 5px rgba(252, 176, 69, 0.2);
+  }
+}
+
+body {
+      font-family: Arial, sans-serif;
+      background: #fff;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+    h1 {
+      color: #800080;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 1.5rem;
+    }
+    .card {
+      background-color: #fefefe;
+      border-left: 6px solid #F7941D;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      border-radius: 12px;
+      padding: 1rem;
+      grid-column: span 2;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:nth-child(even) {
+      border-left: 6px solid #800080;
+    }
+    .card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+    h2 {
+      margin-top: 0;
+      color: #F7941D;
+      font-size: 1.2rem;
+    }
+    .card:nth-child(even) h2 {
+      color: #800080;
+    }
+    ul {
+      padding-left: 1.2rem;
+    }
+    .footer {
+      border-top: 1px solid #ddd;
+      margin-top: 2rem;
+      padding-top: 1rem;
+      font-size: 0.9rem;
+      text-align: center;
+    }
+    .social-icons img {
+      height: 24px;
+      margin: 0 0.5rem;
+      vertical-align: middle;
+    }
+	  
+	   h1.hero-title {
+      color: #ffffff;
+      text-align: center;
+      margin-bottom: 2rem;
+      font-size: 5rem;
+      animation: pulseGlow 3s ease-in-out infinite;
+      transition: transform 0.3s ease;
+    }
+    h1.hero-title:hover {
+      transform: scale(1.05);
+    }
+    @keyframes pulseGlow {
+      0% {
+        text-shadow: 0 0 5px #F7941D, 0 0 10px #800080;
+      }
+      50% {
+        text-shadow: 0 0 20px #F7941D, 0 0 40px #800080;
+      }
+      100% {
+        text-shadow: 0 0 5px #F7941D, 0 0 10px #800080;
+      }
+    }
+
+.services-section {
+  min-height: auto;
+  background-color: #0c0c1c;
+  overflow: hidden;
+}
+
+.diagonal-bg {
+  background: repeating-linear-gradient(
+    -45deg,
+    rgba(255, 255, 255, 0.02) 0px,
+    rgba(255, 255, 255, 0.02) 1px,
+    transparent 1px,
+    transparent 20px
+  );
+  z-index: -1;
+}
+
+.section-title .text-highlight {
+  color: #ff6f61;
+}
+
+.futuristic-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  transition: all 0.4s ease-in-out;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.futuristic-card:hover {
+  transform: translateY(-12px) scale(1.03);
+  box-shadow: 0 12px 36px rgba(255, 111, 97, 0.4);
+  border-color: #ff6f61;
+}
+
+.icon-pulse {
+  animation: pulse 2s infinite;
+  color: #ff6f61;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.1); opacity: 0.8; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+.btn-highlight {
+  background-color: #ff6f61;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.btn-highlight:hover {
+  background-color: #e65b50;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: #0f0f1a;
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding: 1.5rem 2rem;
+  color: #eee;
+  box-shadow: inset 0 0 0 1px #1f1f2f;
+  transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.card:hover {
+  border-color: #ff6f61;
+  transform: translateY(-6px);
+}
+
+
 
  </style>
 
@@ -628,7 +845,7 @@ html {
     
     <!-- Logo -->
     <a class="navbar-brand d-flex align-items-center" href="#">
-  <img src="images/Brandfellas.svg" id="logo-dark" alt="Logo" height="40" class="d-block">
+  <img src="images/Brandfellas.svg" id="logo-dark" alt="Brand Logo" height="40" class="d-block">
 
 </a>
 
@@ -678,78 +895,134 @@ html {
         <p class="section-subtitle">
           We are a dynamic Design and Marketing agency dedicated to crafting compelling brand experiences and driving impactful results. With a fusion of creativity and strategic thinking, we specialize in delivering innovative solutions tailored to meet our clients' unique needs. Our team of passionate experts excels in graphic design, web development, social media management, and digital marketing strategies. We thrive on collaborating closely with our clients to understand their goals and aspirations, transforming their visions into reality. At our core, we are committed to pushing boundaries, sparking creativity, and exceeding expectations to propel brands forward in the ever-evolving landscape of design and marketing.
         </p>
-        <a href="#portfolio" class="btn-about">Explore Our Work</a>
+        <a href="Images\Brochure.pdf" class="btn-about" target="_blank">Download our brochure</a>
       </div>
       <div class="about-image">
-        <img src="https://github.com/Harikvj/brandfellas/blob/main/Team.jpg" alt="About Us">
+        <img src="Images\Team.jpg" alt="About Us">
       </div>
     </div>
   </div>
 </section>
 
 	
-  <!-- Services Section -->
-  <section id="services" class="services-section">
-  <div class="container">
-    <h2 class="section-title text-center">What We Offer</h2>
-    <div class="services-grid">
-      <div class="service-tile">
-        <div class="icon-wrap">
-          <i class="fas fa-paint-brush"></i>
+  <section id="services" class="services-section text-white py-5 position-relative">
+  <div class="diagonal-bg position-absolute top-0 start-0 w-100 h-100 z-n1"></div>
+  <div class="container position-relative">
+    <h2 class="text-center mb-5 section-title">What We <span class="text-highlight">Offer</span></h2>
+    <div class="row justify-content-center gx-4 gy-4">
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="futuristic-card text-center p-4 h-100 fade-in">
+          <i class="fas fa-fingerprint fa-2x mb-3 icon-pulse"></i>
+          <h5>Brand Identity</h5>
+          <p>Crafting unique brand personas with timeless appeal.</p>
         </div>
-        <h3>Brand Design</h3>
-        <p>Creating strong brand identities that reflect your vision and resonate with your audience.</p>
       </div>
-      <div class="service-tile">
-        <div class="icon-wrap">
-          <i class="fas fa-laptop-code"></i>
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="futuristic-card text-center p-4 h-100 fade-in" data-delay="0.1">
+          <i class="fas fa-chart-line fa-2x mb-3 icon-pulse"></i>
+          <h5>Marketing Strategy</h5>
+          <p>Creating marketing funnels that drive real results.</p>
         </div>
-        <h3>Web Development</h3>
-        <p>Designing and building responsive websites that engage users and perform flawlessly.</p>
       </div>
-      <div class="service-tile">
-        <div class="icon-wrap">
-          <i class="fas fa-chart-line"></i>
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="futuristic-card text-center p-4 h-100 fade-in" data-delay="0.2">
+          <i class="fas fa-vector-square fa-2x mb-3 icon-pulse"></i>
+          <h5>Creative Design</h5>
+          <p>Designs that speak louder than words.</p>
         </div>
-        <h3>Marketing Strategy</h3>
-        <p>Crafting data-driven strategies that drive brand awareness and conversion growth.</p>
+      </div>
+    </div>
+    <div class="text-center mt-5">
+      <button class="btn btn-highlight px-4 py-2" type="button" data-bs-toggle="collapse" data-bs-target="#packageCollapse" aria-expanded="false" aria-controls="packageCollapse">
+        Explore Packages
+      </button>
+      <div class="text-center mt-3">
+        <a href="https://calendly.com/vrbrandfellas" target="_blank" rel="noopener noreferrer">
+          <button class="btn btn-outline-light px-4 py-2 mt-2">
+            Book a Free Discovery Call
+          </button>
+        </a>
+      </div>
+      <div class="collapse mt-4" id="packageCollapse">
+        <div class="row justify-content-center gx-4 gy-4">
+          <div class="col-md-4">
+            <div class="futuristic-card text-center p-4 h-100 fade-in" data-delay="0.3">
+              <h5 class="mb-3">Starter Package</h5>
+              <ul class="list-unstyled">
+                <li>✔ Logo Design</li>
+                <li>✔ Social Media Kit</li>
+                <li>✔ 1-Page Website</li>
+              </ul>
+              <p class="mt-3 fw-bold">INR 14,999/-</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="futuristic-card text-center p-4 h-100 fade-in" data-delay="0.4">
+              <h5 class="mb-3">Growth Package</h5>
+              <ul class="list-unstyled">
+                <li>✔ All Starter Features</li>
+                <li>✔ Brand Guidelines</li>
+                <li>✔ Multi-Page Website</li>
+              </ul>
+              <p class="mt-3 fw-bold">INR 29,999/-</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="futuristic-card text-center p-4 h-100 fade-in" data-delay="0.5">
+              <h5 class="mb-3">Pro Package</h5>
+              <ul class="list-unstyled">
+                <li>✔ All Growth Features</li>
+                <li>✔ Custom Marketing Strategy</li>
+                <li>✔ Monthly Creative Assets</li>
+              </ul>
+              <p class="mt-3 fw-bold">INR 49,999/-</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </section>
+
+<!-- Floating CTA for Mobile -->
+<div class="floating-cta d-md-none">
+  <a href="https://calendly.com/yourname/discovery-call" target="_blank" rel="noopener noreferrer" class="btn btn-highlight w-100">
+    Book Free Discovery Call
+  </a>
+</div>
 	
 	<!-- Brands Section -->
 <section id="brands" class="brands-section py-5">
   <div class="container">
-    <h2 class="text-center mb-5 section-title">our  <span class="text-highlight">clients</span></h2>
+    <h2 class="text-center mb-5 section-title">Our  <span class="text-highlight">clients</span></h2>
     <div class="brand-scroll-wrapper">
       <!-- Logo 1 -->
       <div class="brand-logo-wrapper">
-        <img src="images/4p logo-02.png" alt="Brand 1" class="brand-logo">
+        <img src="images/4p logo-02.png" alt="Brand 1_4p Marketing Logo" class="brand-logo">
       </div>
       <!-- Logo 2 -->
       <div class="brand-logo-wrapper">
-        <img src="images/Agam Active.png" alt="Brand 2" class="brand-logo">
+        <img src="images/Agam Active.png" alt="Brand 2_Physical Wellness Logo" class="brand-logo">
       </div>
       <!-- Logo 3 -->
       <div class="brand-logo-wrapper">
-        <img src="images/Crescent moon.png" alt="Brand 3" class="brand-logo">
+        <img src="images/Crescent moon.png" alt="Brand 3_Restaurent" class="brand-logo">
       </div>
       <!-- Logo 4 -->
       <div class="brand-logo-wrapper">
-        <img src="images/Freedom shirt company.png" alt="Brand 4" class="brand-logo">
+        <img src="images/Freedom shirt company.png" alt="Brand 4_Clothing Brand Logo" class="brand-logo">
       </div>
 		<!-- Logo 5 -->
       <div class="brand-logo-wrapper">
-        <img src="images/Lakki Bites.png" alt="Brand 4" class="brand-logo">
+        <img src="images/Lakki Bites.png" alt="Brand _Cake shop logo" class="brand-logo">
       </div>
 		<!-- Logo 6 -->
       <div class="brand-logo-wrapper">
-        <img src="images/PcLogo-03.png" alt="Brand 4" class="brand-logo">
+        <img src="images/PcLogo-03.png" alt="Brand 6_Ricemill Logo" class="brand-logo">
       </div>
 		<!-- Logo 6 -->
       <div class="brand-logo-wrapper">
-        <img src="images/PC Construction.png" alt="Brand 4" class="brand-logo">
+        <img src="images/PC Construction.png" alt="Brand 7_Construction Logo" class="brand-logo">
       </div>
 		
       <!-- Add more logos as needed -->
@@ -805,7 +1078,14 @@ html {
 <section id="contact" class="contact-section" style="padding-top: 50px">
   <div class="container">
     <h2 class="text-left">Contact Us</h2>
-    <p class="text-left">We’d love to hear from you! Please fill out the form below to get in touch.</p>
+	  
+    <p style="margin-bottom: 4px;">If you'd like to reach us, please fill out our contact form.</p>
+
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSedTc26o7_wMAGClt1MbqlF6W-GMpiXUfLTifnCCJixn4pg0g/viewform" 
+       target="_blank" style
+        class="btn btn-blink mt-3">
+      Fill Out Our Form
+    </a>
 
     <div class="row">
 	
@@ -859,7 +1139,7 @@ html {
   
 
 	<!-- Footer -->
-<footer class="bg-dark text-white text-center py-3 mt-6">
+<footer class="bg-dark text-white text-center py-6 mt-6">
   <div class="container">
     &copy; <span id="year"></span> Brand Fellas. All rights reserved.
   </div>
@@ -984,6 +1264,50 @@ html {
     section.style.backgroundPosition = '50% 50%';
   });
 </script>
+	
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Brand Fellas",
+  "url": "https://brandfellas.in",
+  "logo": "https://brandfellas.in/images/logo.png",
+  "sameAs": [
+    "https://www.instagram.com/brandfellas",
+    "https://www.twitter.com/brandfellas"
+  ]
+}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r152/three.min.js"></script>
+
+	<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const collapseBtn = document.querySelector('[data-bs-target="#packageCollapse"]');
+    const collapseTarget = document.querySelector('#packageCollapse');
+
+    collapseBtn?.addEventListener('click', () => {
+      setTimeout(() => {
+        if (collapseTarget?.classList.contains('show')) {
+          collapseTarget.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }, 300);
+    });
+
+    const observer = new IntersectionObserver((entries, obs) => {
+      entries.forEach(({ isIntersecting, target }) => {
+        if (isIntersecting) {
+          const delay = parseFloat(target.dataset.delay || "0");
+          setTimeout(() => {
+            target.classList.add('animate-visible');
+          }, delay * 1000);
+          obs.unobserve(target);
+        }
+      });
+    }, { threshold: 0.2 });
+
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  });
+</script>
+
 
 
 
